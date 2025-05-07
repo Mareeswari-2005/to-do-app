@@ -1,0 +1,54 @@
+.outline{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr ;
+
+}
+.task-adder{
+
+  display:grid;
+  gap: 10px;
+  
+  align-content: center;
+  justify-items: center;
+  width:400px;
+  height: 300px;
+  border:black 4px solid;
+  border-radius:6px;
+  background-color: rgb(241, 240, 240);
+ 
+}
+input{
+  height:80px;
+  width:300px;
+}
+button{
+   background-color:rgb(28, 211, 28);
+   color: black;
+   border: none;
+   height: 30px;
+   width:60px;
+   
+}
+.task-box,.task-added{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.task-box{
+  position:relative;
+}
+
+label{
+  display: block;
+}
+.checklist,.completed-task{
+  
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
