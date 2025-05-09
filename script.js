@@ -3,8 +3,12 @@ const bt=document.getElementById('add');
 const taskli = document.querySelector('.task-list');
 const task=document.querySelector('.task')
 bt.addEventListener('click', (e) => {
-  e.preventDefault();
+  
+ 
   const tasks=task.value;
+   // to store in storage
+   
+
   const newtask=document.createElement('input');
   newtask.type="checkbox";
   newtask.id   = "task-" + Date.now(); 
@@ -31,6 +35,8 @@ bt.addEventListener('click', (e) => {
 
   taskli.appendChild(label);
   task.value=" ";
+
+  localStorage.setItem('tasks',JSON.stringify(tasklist));
   
   
 });

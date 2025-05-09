@@ -3,7 +3,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  
 
 }
 .task-adder{
@@ -15,7 +16,7 @@
   justify-items: center;
   width:400px;
   height: 300px;
-  border:black 4px solid;
+  border:black 3px solid;
   border-radius:6px;
   background-color: rgb(241, 240, 240);
  
@@ -30,6 +31,7 @@ button{
    border: none;
    height: 30px;
    width:60px;
+   border-radius: 4px;
    
 }
 .task-box,.task-added{
@@ -52,3 +54,49 @@ label{
   justify-content: center;
 }
 
+@media (max-width: 600px) {
+  .outline {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;  
+    gap: 20px;
+    height: auto;               
+    padding: 10px;
+  }
+}
+.div1{
+  background-color: aqua;
+}
+
+
+
+.div2,.div3,.div1{
+  width:450px;
+  height:390px;
+}
+
+.div1 {
+  background-color: #f77d7d; 
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.div2 {
+  background-color: #fff23f;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.div3 {
+  background-color: #4cda4c; 
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+.div1, .div2, .div3{
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
